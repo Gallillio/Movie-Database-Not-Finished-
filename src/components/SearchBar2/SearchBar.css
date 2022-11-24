@@ -1,0 +1,53 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.SearchBarStyle{
+    width: 470px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    background-image: url("search icon.png") ;
+    background-position: 10px 6px;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+
+    transition: all 0.90s ease-in-out;
+}
+.SearchBarStyle:focus{
+    background-color: rgb(254,248,214);
+    outline: none;
+}
+
+/* .clear{
+    margin-left: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 19px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+} */
+
+/* ----------------------------------------- */
+/*  suggestions dropdown  */
+
+.dropdown {
+    position: absolute;
+    background-color: rgb(49,49,49);
+    padding: 4px;
+    border-radius: 0 0 10px 10px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-row {
+cursor: pointer;
+text-align: start;
+margin: 2px 0;
+
+}
+
+

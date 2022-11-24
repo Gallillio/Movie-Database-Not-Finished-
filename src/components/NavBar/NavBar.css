@@ -1,0 +1,38 @@
+
+.navbar{
+    background-color: rgb(49,49,49);
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    margin-left: 10em;
+}
+
+.watchlist{
+    font-size: large;
+    padding: 6px;
+    padding-right: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    color:white;
+
+    transition: all 0.15s ease-in-out;
+}
+.watchlist:hover{
+    background-color: rgb(69, 68, 68);
+}
+
+.login{    
+    font-size: large;
+    padding: 6px;
+    border-radius: 7px;
+    cursor: pointer;
+    color:white;
+
+    transition: all 0.15s ease-in-out;
+}
+.login:hover{
+    background-color: rgb(69, 68, 68);
+}
