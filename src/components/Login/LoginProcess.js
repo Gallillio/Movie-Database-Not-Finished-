@@ -55,7 +55,7 @@ function LoginProcess() {
                         </div>
                     </div>
                     <div className='signin-form'>
-                        <h1 class="form-title">Sign up</h1>
+                        <h1 class="form-title">Sign In</h1>
                         <form onSubmit={handleSubmit} className='register-form'>
                             <div className='form-group'>
                                 <label for="name"></label>

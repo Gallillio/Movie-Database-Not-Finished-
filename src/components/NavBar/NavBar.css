@@ -22,17 +22,19 @@
 }
 .watchlist:hover{
     background-color: rgb(69, 68, 68);
+    
 }
 
 .login{    
     font-size: large;
     padding: 6px;
-    border-radius: 7px;
     cursor: pointer;
     color:white;
-
+    border-radius: 7px;
+    
     transition: all 0.15s ease-in-out;
 }
 .login:hover{
     background-color: rgb(69, 68, 68);
+    
 }

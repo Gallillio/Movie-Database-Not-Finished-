@@ -1,34 +1,28 @@
 import React from 'react';
-import { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Navigate
+  Route
 } from "react-router-dom";
-import './globle.css';
-import NavBar from './components/NavBar/NavBar';
-import LoginProcess from './components/Login/LoginProcess';
+
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Watchlist from './pages/Watchlist';
 
 
 
 function App() {
-
   return (
     <div className='backgroundColor'>
-      {/* <Router>
+      {/* Paths to all the pages in our website */}
+      <Router>
           <Routes>
-              <Route exact path="/" element={<NavBar/>} />
-              <Route path="/Login" element={<Login/>} />   
-              <Route path="/about" component={About} />
-              <Route path="/contactus" component={ContactUs} />
-              <Navigate to="/" />
+              <Route path="/" element={<Home/>} />
+              <Route path="/Login" element={<Login/>} />
+              <Route path="/Watchlist" element={<Watchlist/>} />      
           </Routes>
-      </Router> */}
-
-      <NavBar/>
-      <LoginProcess/>
+      </Router>
     </div>
     
   );
