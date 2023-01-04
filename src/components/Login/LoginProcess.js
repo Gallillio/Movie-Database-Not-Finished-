@@ -1,8 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
-import './LoginProcess.css';
+import {Link, NavLink, Navigate} from "react-router-dom";
+
 // Font Icon
 import './fonts/material-icon/css/material-design-iconic-font.min.css';
+import './LoginProcess.css';
 
 import laptopGuyImg from './signin-image.png';
 
@@ -56,7 +58,7 @@ function LoginProcess() {
                     </div>
                     <div className='signin-form'>
                         <h1 class="form-title">Sign In</h1>
-                        <form onSubmit={handleSubmit} className='register-form'>
+                        <form onSubmit={handleSubmit}>
                             <div className='form-group'>
                                 <label for="name"></label>
                                 <input
@@ -79,12 +81,12 @@ function LoginProcess() {
                                     onChange={(e) => setPassword(e.target.value)}
                                 />
                             </div>
-                            
                             <div class="form-group form-button">
-                                <input type="submit" name="signin" id="signin" class="form-submit" value="Login"/>
+                                <input type="submit" name="signin" class="form-submit" value="Login"/>
                             </div>
                         </form>
-                        <div class="">
+
+                        <div>
                             <span class="social-label">Or login with</span>
                             <ul class="socials">
                                 <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
@@ -92,6 +94,10 @@ function LoginProcess() {
                                 <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
                             </ul>
                         </div>
+                        <hr className='white'/>
+                        <span className='white'>Dont have an Account?</span>
+                        <br/>
+                        <Link to="/Register"><input type="submit" name="register" class="form-submit register" value="Create New Account"/></Link>
                     </div>
                 </div>
             </section>

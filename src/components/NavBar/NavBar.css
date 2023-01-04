@@ -11,6 +11,9 @@
 }
 
 .watchlist{
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    place-items: center;
     font-size: large;
     padding: 6px;
     padding-right: 15px;
@@ -37,4 +40,15 @@
 .login:hover{
     background-color: rgb(69, 68, 68);
     
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    color: rgb(254,248,214);
+    font-size: 30px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 48
 }

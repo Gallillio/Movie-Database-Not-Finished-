@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 //importing Link from react-router-dom to navigate to different end points.
-import {Link, NavLink, Navigate} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 import './NavBar.css';
 import SearchBar2 from '../SearchBar2/SearchBar2'
@@ -16,7 +16,6 @@ function NavBar() {
     // if(goToWatchlist){
     //     return <Navigate to="/Watchlist" />;
     // }
-
     return(
         <nav>
             <div className='navbar'>
@@ -25,23 +24,21 @@ function NavBar() {
 
                 <NavLink to="/Watchlist" style={({ isActive }) => 
                       (isActive ? {backgroundColor: 'rgb(69, 68, 68)',borderRadius: '7px'} : {color: ''})}>    
-                <div className='watchlist'><img src={watchlistIcon} width='30em'/>Watchlist</div></NavLink>
+                <div className='watchlist'><span className="material-symbols-outlined">library_add</span>Watchlist</div></NavLink>
+
+                <NavLink to="/CreateMovie" style={({ isActive }) =>
+                (isActive ? {backgroundColor: 'rgb(69, 68, 68)',borderRadius: '7px'} : {color: ''})}>
+                <div className='login'>Create Movie</div></NavLink>
 
                 <NavLink to="/Login" style={({ isActive }) => 
                       (isActive ? {backgroundColor: 'rgb(69, 68, 68)',borderRadius: '7px'} : {color: ''})}>
                         <div className='login'>Login</div></NavLink>
 
-
-
-                <div className='login'>standin-text</div><div className='login'>standin-text</div>   
+                <NavLink to="/Register"style={({ isActive }) => 
+                      (isActive ? {backgroundColor: 'rgb(69, 68, 68)',borderRadius: '7px'} : {color: ''})}><div className='login'>Register</div></NavLink>
             </div>
         </nav>
         
     )
 }
-
-
-
-
-
 export default NavBar

@@ -257,6 +257,10 @@ input, select, textarea {
 .rememberMeColor{
     color:white;
 }
+.white{
+  color:white;
+  text-align: center;
+}
 .social-login {
     align-items: center;
     -moz-align-items: center;
@@ -269,6 +273,7 @@ input, select, textarea {
     background: rgb(254,248,214);
     color: rgb(49,49,49);
     border-bottom: none;
+    margin-bottom: 15px;
     
     padding: 10px 39px;
     border-radius: 5px;
@@ -286,6 +291,9 @@ input, select, textarea {
     margin-left: 110px;
     margin-right: 20px;
     margin-top: 10px; 
+}
+.register{
+  margin-top: 7px;
 }
 .form-button {
     text-align: center; }
@@ -324,9 +332,6 @@ display-flex, .display-flex, .display-flex-center, .signup-content, .signin-cont
 .signin-content{
     padding-top: 67px;
     padding-bottom: 87px;
-}
-.register-form {
-    width: 100%; 
 }
 .form-group {
     

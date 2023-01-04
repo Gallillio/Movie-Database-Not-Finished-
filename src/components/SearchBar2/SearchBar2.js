@@ -16,7 +16,6 @@ const SearchBar2 = () => {
         setSearchValue(event.target.value);
     }
     
-
     return(
         <div>
             
@@ -55,6 +54,5 @@ const SearchBar2 = () => {
         </div>
     ) 
 }
-
 
 export default SearchBar2
